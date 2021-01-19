@@ -1,0 +1,3 @@
+[submodule "tools/bin2cpp"]
+	path = tools/bin2cpp
+	url = https://github.com/uyamae/bin2cpp.git

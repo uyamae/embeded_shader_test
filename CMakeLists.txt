@@ -1,4 +1,8 @@
 cmake_minimum_required(VERSION 3.18)
 set(CMAKE_CXX_VERSION 17)
 project(shader CXX)
+add_subdirectory(tools/bin2cpp)
 add_subdirectory(src)
+add_dependencies(compile_shaders bin2cpp)
+add_dependencies(embeded_shaders compile_shaders)
+add_dependencies(app embeded_shaders)
